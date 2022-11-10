@@ -21,6 +21,5 @@ public class CD extends Item {
 		return "CD{" + super.toString() + ",numberOfTracks=" + numberOfTracks + '}';
 	}
 	
-	
-	
+	public void accept(ItemVisitor v){v.visit(this);}
 }
